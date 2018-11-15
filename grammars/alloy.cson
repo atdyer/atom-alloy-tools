@@ -1,0 +1,81 @@
+# TextMate tutorial: http://manual.macromates.com/en/language_grammars
+
+scopeName: 'source.alloy'
+name: 'Alloy'
+fileTypes: ['als']
+patterns: [
+  { include: '#comments' }
+  { include: '#modifiers' }
+  { include: '#compareOp' }
+  { include: '#binOp' }
+  { include: '#unOp' }
+  { include: '#modules' }
+  { include: '#declarations' }
+  { include: '#keywords' }
+]
+repository:
+
+  compareOp: {
+    match: '\\bin\\b|=(?!>)|<|(<!-)>|=<|>='
+    name: 'constant.character.alloy'
+  }
+
+  binOp: {
+    match: '\\b(or|and|iff|implies)\\b|\\|{2}|&&|<=>|=>|&|\\+|-(?!>)|<:|:>|\\.'
+    name: 'variable.language.alloy'
+  }
+
+  mult: {
+    match: '\\b(lone|some|one)\\b'
+    name: 'storage.modifier.alloy'
+  }
+
+  unOp: {
+    patterns: [
+      {
+        match: '\\b(not|no|set)\\b|#|~|\\*|\\^'
+        name: 'storage.modifier.alloy'
+      }
+      { include: '#mult' }
+    ]
+  }
+
+  comments: {
+    patterns: [
+      {
+        begin: '/\\*'
+        end: '\\*/'
+        name: 'comment.block.alloy'
+      }
+      {
+        begin: '//'
+        end: '\n'
+        name: 'comment.line.double-slash.alloy'
+      }
+      {
+        begin: '--'
+        end: '\n'
+        name: 'comment.line.double-dash.alloy'
+      }
+    ]
+  }
+
+  declarations: {
+    match: '\\b(sig|fact|pred|fun|assert|run|check)\\b'
+    name: 'entity.name.type.markup.bold.alloy';
+  }
+
+  modifiers: {
+    match: '\\b(abstract|all|disj|lone|no|one|set|some|sum)\\b'
+    name: 'storage.modifier.alloy'
+  }
+
+  keywords: {
+    match: '\\b(this|else|let)\\b|\\|'
+    name: 'variable.language.alloy'
+  }
+
+  modules: {
+    match: '\\b(module|open|import)\\b'
+    name: 'entity.name.section.markup.bold.alloy'
+  }

@@ -1,0 +1,6 @@
+{
+  "atom-workspace": {
+    "ctrl-alt-o": "atom-alloy-tools:show-default",
+    "ctrl-alt-m": "atom-alloy-tools:show-styles"
+  }
+}

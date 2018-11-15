@@ -1,0 +1,21 @@
+{
+  "name": "atom-alloy-tools",
+  "main": "./lib/atom-alloy-tools",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "atom-alloy-tools:activate"
+  },
+  "activationHooks": [
+    "atom-alloy-tools:grammar-used"
+  ],
+  "repository": "https://github.com/atom/atom-alloy-tools",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "d3-selection": "1.3.2"
+  }
+}
