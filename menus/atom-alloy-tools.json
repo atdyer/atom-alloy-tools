@@ -1,9 +1,9 @@
 {
   "context-menu": {
-    "atom-text-editor": [
+    ".alloy-cli": [
       {
-        "label": "Toggle atom-alloy-tools",
-        "command": "atom-alloy-tools:toggle"
+        "label": "Clear Commands",
+        "command": "atom-alloy-tools:clear-cli"
       }
     ]
   },

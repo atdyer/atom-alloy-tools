@@ -1,0 +1,33 @@
+
+.alloy-cli {
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  font-family: monospace;
+  font-size: 11px;
+
+  padding: 0.5em;
+
+  .row {
+
+    display: flex;
+    flex: 0 0 auto;
+
+    .prefix {
+      padding-right: 0.5em;
+      font-weight: bold;
+    }
+
+    .info {
+      color: @text-color-info;
+    }
+
+    .error {
+      color: @text-color-error;
+    }
+
+  }
+
+}
