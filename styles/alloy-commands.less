@@ -1,0 +1,59 @@
+@import "ui-variables";
+
+.alloy-commands {
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  font-family: monospace;
+  font-size: 11px;
+  line-height: 2em;
+
+  cursor: default;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .row {
+
+    display: flex;
+    flex: 0 0 auto;
+
+    color: @text-color-subtle;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+
+    .prefix {
+      min-width: 2em;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .icon::before {
+      margin-right: 0 !important;
+    }
+
+    .content {
+      padding-left: 1em;
+      border-left: 1px solid lighten(@button-border-color, 5%);
+    }
+
+  }
+
+  .active {
+
+    cursor: pointer;
+    color: @text-color;
+    background-color: @button-background-color;
+
+    &:hover {
+      background-color: @button-background-color-hover;
+    }
+
+  }
+
+}
