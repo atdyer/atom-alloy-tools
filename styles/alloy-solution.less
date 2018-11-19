@@ -36,6 +36,11 @@
     justify-content: center;
     text-align: center;
 
+    svg {
+      flex: 1 0 auto;
+      align-self: stretch;
+    }
+
   }
 
   .button {
@@ -46,6 +51,38 @@
     border: 1px solid @button-border-color;
     background-color: @button-background-color;
     padding: @component-padding;
+
+    &:hover {
+      background-color: @button-background-color-hover;
+    }
+
+  }
+
+  .header-mesh {
+
+    display: flex;
+    flex: 0 0 auto;
+
+    background-color: @button-background-color;
+    color: @text-color;
+    padding: 0.5em;
+    line-height: 1.3em;
+
+    cursor: pointer;
+
+    .prefix {
+      min-width: 2em;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .content {
+      padding-left: 1em;
+      border-left: 1px solid lighten(@button-border-color, 5%);
+    }
 
     &:hover {
       background-color: @button-background-color-hover;
