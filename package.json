@@ -7,6 +7,12 @@
     "alloy",
     "modeling"
   ],
+  "homepage": "https://github.com/atdyer/atom-alloy-tools.git",
+  "author": {
+    "name": "Tristan Dyer",
+    "email": "atristandyer@gmail.com",
+    "url": "https://www.tristandyer.com"
+  },
   "activationCommands": {
     "atom-workspace": "atom-alloy-tools:activate"
   },
