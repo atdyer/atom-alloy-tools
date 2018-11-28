@@ -1,9 +1,12 @@
 {
   "name": "atom-alloy-tools",
   "main": "./lib/atom-alloy-tools",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Editor tools for the Alloy modeling language",
-  "keywords": ["alloy", "modeling"],
+  "keywords": [
+    "alloy",
+    "modeling"
+  ],
   "activationCommands": {
     "atom-workspace": "atom-alloy-tools:activate"
   },
