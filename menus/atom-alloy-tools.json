@@ -6,21 +6,5 @@
         "command": "atom-alloy-tools:clear-cli"
       }
     ]
-  },
-  "menu": [
-    {
-      "label": "Packages",
-      "submenu": [
-        {
-          "label": "atom-alloy-tools",
-          "submenu": [
-            {
-              "label": "Toggle",
-              "command": "atom-alloy-tools:toggle"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  }
 }
