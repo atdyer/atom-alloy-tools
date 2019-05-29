@@ -1,7 +1,7 @@
 {
   "name": "atom-alloy-tools",
   "main": "./lib/atom-alloy-tools",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Editor tools for the Alloy modeling language",
   "keywords": [
     "alloy",
